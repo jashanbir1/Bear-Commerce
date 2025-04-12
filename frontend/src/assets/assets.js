@@ -67,6 +67,8 @@ import menu_icon from './menu_icon.png'
 
 import contact_img from './contact.png'
 
+import student_img from './students.png'
+
 import contact_us_page_img from './contact_us_page.png'
 
 //import razorpay_logo from './razorpay_logo.png'
@@ -106,6 +108,8 @@ export const assets = {
     menu_icon,
 
     contact_img,
+
+    student_img,
 
     contact_us_page_img,
 
