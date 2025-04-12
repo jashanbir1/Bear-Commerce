@@ -1,8 +1,9 @@
 // src/tests/Product.test.jsx
 import { render, screen, fireEvent, waitFor, within } from '@testing-library/react'
-import { vi } from 'vitest'
-import { describe } from 'vitest'
-import { expect } from 'vitest'
+// import { vi } from 'vitest'
+// import { describe } from 'vitest'
+// import { expect } from 'vitest'
+import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { ShopContext } from '../context/ShopContext'
 import Product from '../pages/Product'
 import '@testing-library/jest-dom'

@@ -2,9 +2,10 @@ import { render, screen, fireEvent, within } from '@testing-library/react'
 import Navbar from '../components/Navbar'
 import { ShopContext } from '../context/ShopContext'
 import { BrowserRouter } from 'react-router-dom'
-import { vi } from 'vitest'
-import { describe } from 'vitest'
-import { expect } from 'vitest'
+// import { vi } from 'vitest'
+// import { describe } from 'vitest'
+// import { expect } from 'vitest'
+import { describe, it, expect, beforeEach, vi } from 'vitest';
 import '@testing-library/jest-dom'
 
 // Mock assets to provide image URLs for testing

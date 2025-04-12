@@ -1,8 +1,9 @@
 // src/tests/Orders.test.jsx
 import { render, screen, waitFor, fireEvent } from '@testing-library/react'
-import { vi } from 'vitest'
-import { describe } from 'vitest'
-import { expect } from 'vitest'
+// import { vi } from 'vitest'
+// import { describe } from 'vitest'
+// import { expect } from 'vitest'
+import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { ShopContext } from '../context/ShopContext'
 import Orders from '../pages/Orders'
 import axios from 'axios'
