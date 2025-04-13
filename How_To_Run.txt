@@ -1,23 +1,27 @@
 FOR WITHOUT BASH
 
+open each seperate asset in its own terminal
 
-
-FOR BACKEND:
+FOR BACKEND (open backend in integrated terminal):
 npm install cors dotenv express mongoose jsonwebtoken nodemon razorpay stripe validator cloudinary bcrypt multer
 npm install --save-dev nodemon
 npm run dev
 
-FOR FRONTEND:
+FOR FRONTEND (open frontend in integrated terminal):
 npm install
 npm run dev
 
-FOR ADMIN:
+FOR ADMIN (open admin in integrated terminal):
 npm run dev
 
-TO RUN TESTS:
+TO RUN TESTS (open frontend in integrated terminal):
 npm install
 npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom axios
 npm install -D react-router-dom
 npm install -D @types/jest @types/react @types/react-dom @types/react-router-dom
 npm run test
 
+TO RUN SCRIPT (open scripts in integrated terminal):
+chmod +x run_all.sh 
+^^^^^^^^^^^^^ RUN ONLY ONCE 
+./run_all.sh
