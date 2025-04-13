@@ -1,13 +1,12 @@
 name: Bear Commerce CI
  
- # Trigger the workflow on pushes to 'main' branch or on pull requests
- on:
+on:
    push:
      branches: [ "main" ]
    pull_request:
      branches: [ "main" ]
  
- jobs:
+jobs:
    build-test:
      runs-on: ubuntu-latest
  
