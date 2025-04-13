@@ -1,12 +1,10 @@
-// Login.test.jsx
+import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import Login from '../pages/Login'
 import { ShopContext } from '../context/ShopContext'
 import axios from 'axios'
-// import { vi } from 'vitest'
-// import { describe } from 'vitest'
-// import { expect } from 'vitest'
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { vi } from 'vitest'
+
 import '@testing-library/jest-dom'
 
 // Mock axios
@@ -104,3 +102,4 @@ describe('Login Component', () => {
     })
   })
 })
+
