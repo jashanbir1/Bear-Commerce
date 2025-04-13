@@ -1,6 +1,5 @@
 name: Bear Commerce CI
 
-# Trigger the workflow on pushes to 'main' branch or on pull requests
 on:
   push:
     branches: [ "main" ]
@@ -16,11 +15,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Use Node.js (adjust the version to match your project)
+      # Step 2: Set up Node.js with the desired version (here, version 16)
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
           node-version: '16'
+
+      # Step 3: Verify the current Node version (this confirms you’re using the correct version)
+      - name: Verify Node Version
+        run: echo "Node version: $(node -v)"
 
       #####################################
       # BACKEND
