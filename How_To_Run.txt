@@ -23,6 +23,6 @@ npm run test
 
 TO RUN SCRIPT (open scripts in integrated terminal):
 chmod +x run_all.sh 
-^^^^^^^^^^^^^ RUN ONLY ONCE 
+^^^^^^^^^^^^^ RUN ONLY IF ITS FIRST TIME, OTHERWISE DO BELOW 
 ./run_all.sh
 
