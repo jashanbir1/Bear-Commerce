@@ -25,3 +25,4 @@ TO RUN SCRIPT (open scripts in integrated terminal):
 chmod +x run_all.sh 
 ^^^^^^^^^^^^^ RUN ONLY ONCE 
 ./run_all.sh
+
