@@ -1,0 +1,71 @@
+name: Bear Commerce CI
+
+# Trigger the workflow on pushes to 'main' branch or on pull requests
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Use Node.js (adjust the version to match your project)
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      #####################################
+      # BACKEND
+      #####################################
+      - name: Install Backend Dependencies
+        working-directory: ./backend
+        run: npm install
+
+      - name: Test Backend (if you have a test script)
+        working-directory: ./backend
+        run: |
+          if npm run | grep -q "test"; then
+            npm run test
+          else
+            echo "No test script for backend, skipping..."
+          fi
+
+      #####################################
+      # FRONTEND
+      #####################################
+      - name: Install Frontend Dependencies
+        working-directory: ./frontend
+        run: npm install
+
+      - name: Test Frontend
+        working-directory: ./frontend
+        run: |
+          if npm run | grep -q "test"; then
+            npm run test
+          else
+            echo "No test script for frontend, skipping..."
+          fi
+
+      #####################################
+      # ADMIN
+      #####################################
+      - name: Install Admin Dependencies
+        working-directory: ./admin
+        run: npm install
+
+      - name: Test Admin
+        working-directory: ./admin
+        run: |
+          if npm run | grep -q "test"; then
+            npm run test
+          else
+            echo "No test script for admin, skipping..."
+          fi
