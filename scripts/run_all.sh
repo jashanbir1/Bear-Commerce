@@ -26,9 +26,9 @@ sleep 5
 
 # TESTS
 # Assuming test dependencies and the test command are defined in the project root package.json
-run_section "Setting up Tests" "cd .. && npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom axios"
-run_section "Setting up Frontend Test Dependencies" "cd .. && npm install -D react-router-dom @types/jest @types/react @types/react-dom @types/react-router-dom"
-run_section "Running Tests" "cd .. && npm run test"
+run_section "Setting up Tests" "cd ../frontend && npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom axios"
+run_section "Setting up Frontend Test Dependencies" "cd ../frontend && npm install -D react-router-dom @types/jest @types/react @types/react-dom @types/react-router-dom"
+run_section "Running Tests" "cd ../frontend && npm run test"
 
 echo "All tasks complete!"
 
