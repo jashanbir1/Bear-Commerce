@@ -79,7 +79,7 @@ The project leverages automated builds and tests via GitHub Actions and uses npm
     cd ..
     npm install
 4. **Run Application**
-    ``` Option 1 (Recommended): Run through executed Bash script
+    Option 1 (Recommended): Run through executed Bash script
     Step 1. Navigate to scripts directory from Bear-Commerce
 
     cd scripts
@@ -93,7 +93,7 @@ The project leverages automated builds and tests via GitHub Actions and uses npm
     ./run_all.sh
 
 
-    ```Option 2: To run locally
+    Option 2: To run locally
     Step 1. Navigate to backend directory and double click "backend" and navigate downward to click "Open in integrated terminal" and execute following commands
 
     npm run dev
