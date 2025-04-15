@@ -79,7 +79,7 @@ The project leverages automated builds and tests via GitHub Actions and uses npm
     cd ..
     npm install
 4. **Run Application**
-    Option 1 (Recommended): Run through executed Bash script
+    ```Option 1 (Recommended): Run through executed Bash script
     Step 1. Navigate to scripts directory from Bear-Commerce
 
     cd scripts
